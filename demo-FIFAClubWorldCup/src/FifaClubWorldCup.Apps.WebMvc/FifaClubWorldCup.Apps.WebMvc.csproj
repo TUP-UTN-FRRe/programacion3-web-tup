@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FifaClubWorldCup.Core.Entidades\FifaClubWorldCup.Core.Entidades.csproj" />
+    <ProjectReference Include="..\FifaClubWorldCup.Core.Negocio\FifaClubWorldCup.Core.Negocio.csproj" />
+  </ItemGroup>
+
+</Project>
