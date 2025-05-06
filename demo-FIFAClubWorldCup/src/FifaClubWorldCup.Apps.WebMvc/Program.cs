@@ -1,7 +1,14 @@
+using FifaClubWorldCup.Core.Negocio;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddScoped<EquipoNegocio>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
 
 var app = builder.Build();
 
