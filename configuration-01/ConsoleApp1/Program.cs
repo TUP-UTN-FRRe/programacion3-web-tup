@@ -7,8 +7,10 @@ using Microsoft.Extensions.Configuration;
 IConfiguration configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddUserSecrets<Program>()
     .Build();
 
+//https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets
 
 
 //var title = "Programacion III";
