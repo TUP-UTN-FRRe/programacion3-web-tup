@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FifaClubWorldCup.Core.Config\FifaClubWorldCup.Core.Config.csproj" />
     <ProjectReference Include="..\FifaClubWorldCup.Core.Entidades\FifaClubWorldCup.Core.Entidades.csproj" />
   </ItemGroup>
 

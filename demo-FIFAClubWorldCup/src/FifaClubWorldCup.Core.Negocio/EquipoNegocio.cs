@@ -5,17 +5,19 @@ namespace FifaClubWorldCup.Core.Negocio
 {
     public class EquipoNegocio
     {
-        
-        //public EquipoNegocios(FifaClubWorldCupDbContext context)
-        //{
-        //    _context = context;
-        //}
-     
+
+        private readonly EquipoRepository _equipoRepository;
+
+        public EquipoNegocio(EquipoRepository equipoRepository)
+        {
+            _equipoRepository = equipoRepository;
+        }
+
         public List<Equipo> Listado()
         {
-            var equipoRepository = new EquipoRepository();
+            //var equipoRepository = new EquipoRepository();
 
-            return equipoRepository.Listado();
+            return _equipoRepository.Listado();
         }
     }
     

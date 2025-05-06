@@ -1,8 +1,22 @@
+using FifaClubWorldCup.Core.Config;
+using FifaClubWorldCup.Core.Datos;
 using FifaClubWorldCup.Core.Negocio;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Read configuration files
+builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddEnvironmentVariables();
 
+var configuracionActual = new ConfiguracionActual();
+//builder.Configuration.Bind(configuracionActual);
+configuracionActual.FifaClubWorldCupConnectionString = builder.Configuration.GetConnectionString("FifaClubWorldCupConnectionString");
+
+builder.Services.AddScoped<ConfiguracionActual>(provider => configuracionActual);
+
+builder.Services.AddScoped<EquipoRepository>();
 builder.Services.AddScoped<EquipoNegocio>();
 
 // Add services to the container.
