@@ -4,6 +4,7 @@
 using ConsoleApp1;
 using Microsoft.Extensions.Configuration;
 
+//https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration
 IConfiguration configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
