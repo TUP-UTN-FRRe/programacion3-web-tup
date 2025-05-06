@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36017.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starwars.Core.Services", "Starwars.Core.Services\Starwars.Core.Services.csproj", "{F298A111-1128-4B3E-B671-90B095DE328F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starwars.Core.Services.Tests", "Starwars.Core.Services.Tests\Starwars.Core.Services.Tests.csproj", "{65117596-9F11-48A1-83C1-80FAD8FF55E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F298A111-1128-4B3E-B671-90B095DE328F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F298A111-1128-4B3E-B671-90B095DE328F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F298A111-1128-4B3E-B671-90B095DE328F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F298A111-1128-4B3E-B671-90B095DE328F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65117596-9F11-48A1-83C1-80FAD8FF55E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65117596-9F11-48A1-83C1-80FAD8FF55E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65117596-9F11-48A1-83C1-80FAD8FF55E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65117596-9F11-48A1-83C1-80FAD8FF55E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9F09CBA-39BA-4D89-B766-E9D480C9B774}
+	EndGlobalSection
+EndGlobal
