@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Starwars.Core.Services.Interfaces;
 using System;
 
 namespace Starwars.Core.Services.Tests
@@ -12,7 +13,8 @@ namespace Starwars.Core.Services.Tests
             IServiceCollection services = new ServiceCollection();
 
             services.AddTransient<Service1>();
-            services.AddTransient<Service2>();
+            //services.AddTransient<IService2, Service2>();
+            services.AddTransient<IService2, Service2Dummy>();
             services.AddTransient<Service4>();
             services.AddTransient<Service5>();
             services.AddTransient<Service6>();
