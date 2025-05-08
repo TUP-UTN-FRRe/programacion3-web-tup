@@ -14,10 +14,11 @@ namespace FifaClubWorldCup.Core.Datos
 
         public List<Equipo> Listado()
         {
-
-            var dbContext = new FifaClubWorldCupDbContext(_configuracionActual);
-
-            return dbContext.Equipos.ToList();
+            using (var dbContext = new FifaClubWorldCupDbContext(_configuracionActual))
+            {
+                return dbContext.Equipos.ToList();
+            }
+           
         }
     }
 }

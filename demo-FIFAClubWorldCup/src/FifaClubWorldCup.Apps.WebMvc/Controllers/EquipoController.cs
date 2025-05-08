@@ -7,7 +7,7 @@ namespace FifaClubWorldCup.Apps.WebMvc.Controllers
     {
         private EquipoNegocio _equipoNegocio;
 
-        public EquipoController(EquipoNegocio equipoNegocio )
+        public EquipoController(EquipoNegocio equipoNegocio)
         {
             _equipoNegocio = equipoNegocio;
         }
