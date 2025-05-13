@@ -1,0 +1,39 @@
+.header {
+    background-color: fuchsia;
+    text-align: center;
+}
+
+.main {
+    background-color: aqua;
+}
+
+.menu {
+    background-color: lime;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.color-bg-red {
+    background-color: red;
+}
+
+.color-bg-blue {
+    background-color: blue;
+}
+
+.color-bg-green {
+    background-color: green;
+}
+
+.color-bg-yellow {
+    background-color: yellow;
+}
+
+.border-red {
+    border: 1px solid red !important;
+}
+
+.border-blue {
+    border: 1px solid blue;
+}
