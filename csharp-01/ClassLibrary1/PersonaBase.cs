@@ -24,7 +24,7 @@
 
         public string Nombre { get; set; }
 
-
+         
         private string _apellido;
         public string Apellido
         {
