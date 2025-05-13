@@ -19,6 +19,7 @@ namespace FifaClubWorldCup.Core.Datos
         }
 
         public DbSet<Equipo> Equipos { get; set; }
+        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -12,6 +12,7 @@ namespace FifaClubWorldCup.Core.Datos
             _configuracionActual = configuracionActual;
         }
 
+
         public List<Equipo> Listado()
         {
             using (var dbContext = new FifaClubWorldCupDbContext(_configuracionActual))

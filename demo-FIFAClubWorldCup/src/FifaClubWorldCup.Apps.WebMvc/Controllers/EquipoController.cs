@@ -7,11 +7,15 @@ namespace FifaClubWorldCup.Apps.WebMvc.Controllers
     {
         private EquipoNegocio _equipoNegocio;
 
+
         public EquipoController(EquipoNegocio equipoNegocio)
         {
             _equipoNegocio = equipoNegocio;
         }
 
+
+        [Route("listado-de-equipos.html")]
+        [Route("list")]
         public IActionResult Index()
         {
             //var equipoNegocio = new FifaClubWorldCup.Core.Negocio.EquipoNegocio();
