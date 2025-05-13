@@ -8,5 +8,9 @@ namespace ClassLibrary1
 {
     public class Alumno: PersonaBase
     {
+        public Alumno()
+        {
+         
+        }
     }
 }

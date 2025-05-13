@@ -8,11 +8,11 @@ namespace TestProject1
         public void Test1()
         {
             var alumno = new Alumno();
+            alumno.Nombre = "Juan";
             alumno.FechaNacimiento = new DateTime(2000, 1, 1);
 
             Assert.True(alumno.Edad == 25, "La edad no es correcta.");
-
-
+            Assert.Equal("Juan", alumno.Nombre);
         }
     }
 }
