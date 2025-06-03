@@ -1,0 +1,10 @@
+@WebApi1_HostAddress = https://localhost:7029
+
+GET {{WebApi1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{WebApi1_HostAddress}}/api/saludar
+Accept: application/json
+
