@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+   
+ 
+<div x-data="{ open: false }">
+    <button @click="open = true">Expand</button>
+ 
+    <span x-show="open">
+        Content...Hello!
+
+        <br>
+        <button @click="open = false">Close</button>
+    </span>
+</div>
+</body>
+</html>
